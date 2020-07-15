@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>DIFF BTW VAR,LET,CONST</h1> 
+</head>
+<body>
+    <script>
+        {
+            var a=10;//var is a globe scope variable and it is limited to the function within which it is defined 
+            //it can be accessed and overwrite throughout the function
+            //it is fuction scoped
+            console.log(a);
+        }
+        a++;
+        console.log(a);
+        var a=25;
+        console.log(a);
+        {
+            let a=15 // let is a local variable and it can be accessed only within the block{}
+            // it can be accessed outside of the block that will renders an error. 
+            let b=30;
+            console.log(b);
+            console.log("the value of in block "+a);
+        }
+        console.log("the value of global a is"+a);
+        //b--;
+       // console.log(b);
+        const pi=3.14//const is constant which means its is final once its is defined no one can change the value of the variable.
+        console.log(pi);
+        pi=3.00;
+        console.log(pi);
+
+
+    </script>
+    
+</body>
+</html>
