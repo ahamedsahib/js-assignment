@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // string methods
+        let a="letUpgrade is very useful to enhance ur knowledge";
+        console.log(a.search("is"));//The search() method returns the position of the first occurrence of a specified text in a string:
+        //slice method
+        let str="hey i am javascript";
+        console.log(str.slice(5));
+        console.log(str.slice(5,12));//it has two parameter first and end position of a string.
+        //substr
+        let st=`apple,banana,mango`;
+        console.log(st.substr(6));
+        console.log(st.substr(6,6));//it is similar to slice bt the 2nd paramter denotes the length of the string.
+        //replace
+        let b="please vist our website website";
+        console.log(b.replace("website","letsupgrade"));
+        console.log(b.replace(/website/g,"letsupgrade"));// /g denotes global match it relace all the existing word with new word 
+        //trim
+        let c="     heelloooo world!!!!       ";
+        console.log(c.trim());//it removes the unwanted white space.
+        //charcodeat
+        let d="hello world";
+        console.log(str.charCodeAt(2));//it returns unicode(ASCII) of the string 
+        //split
+        let ster = "a,b,c,d,e,f";
+        var arr = ster.split(",");//it split the elements into an array.
+        console.log(arr[1]);
+        
+
+        // array methods
+        //join
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.join('*'));//it is used a separate between the elements in an array.
+        //splice
+        let fruit=["Banana", "Orange", "Apple", "Mango"];
+        let remove=fruit.splice(1,2,"lemon");
+        console.log("new array :"+fruit);
+        console.log("removed item "+remove);
+        console.log(fruit.splice(0,1));
+
+</script>
+    
+</body>
+</html>
