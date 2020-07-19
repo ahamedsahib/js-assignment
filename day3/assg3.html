@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        mark = prompt( "Please input the mark(%)" );
+mark = parseInt( mark, 10 ); // see comment
+
+/*if(mark>100){
+alert( "Invalid mark, outside range 0-100" );
+
+}
+if( mark >=75 )
+{
+console.log("Marks are "+mark+" and grade is A");
+}
+else if( mark >= 50 )
+{
+    console.log("Marks are "+mark+" and grade is B");
+}
+
+else 
+{
+console.log("he is fail");
+}*/
+var grade = (mark < 50) ? 'Fail' : (mark < 50) ? "Marks are "+mark+" and grade is B" : (mark <75) ? "Marks are "+mark+" and grade is A" :(mark>100) ? alert( "Invalid mark, outside range 0-100" ):null ;
+
+console.log(grade)
+
+
+    </script>
+    
+</body>
+</html>
