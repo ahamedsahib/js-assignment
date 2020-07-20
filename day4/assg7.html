@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n= +prompt("enter the number");
+        let allPrimes = (n) => {
+   let isPrime = new Array(n+1).fill(true);
+   isPrime[0] = false;
+   isPrime[1] = false;
+  
+   let primes = [];
+   for(let i = 2; i <= n; i++){  
+     if(isPrime[i] === true){
+        primes.push(i); 
+     }
+      let next = i * i;
+      while (next <= n) {
+        isPrime[next] = false;
+        next += i;
+      }  
+   }
+   return primes;
+}
+console.log(allPrimes(n));
+    </script>
+    
+</body>
+</html>

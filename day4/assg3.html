@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let shoplist=['fruits','vegetables','tide','soap'];
+        shoplist.forEach(function(list){
+            console.log(list);
+        })
+        shoppingbasket=[...shoplist];
+        shoppingbasket.push('shampoo','utensils');
+        console.log(`updated list ${shoppingbasket}`);
+        console.log("old list "+shoplist);
+
+    </script>
+</body>
+</html>
